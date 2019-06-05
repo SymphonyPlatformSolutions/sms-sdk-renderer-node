@@ -22,7 +22,7 @@ Please make sure the following tools are installed:
 ### Install SDK
 
 * Add to your `package.json` file in the `"dependencies"` property, this line:
-`"sms-sdk-renderer": "github:SymphonyPlatformSolutions/sms-sdk-renderer.git"`
+`"sms-sdk-renderer": "github:SymphonyPlatformSolutions/sms-sdk-renderer"`
 * If you're developing client application, add this to your `webpack.config.js` file:
 
 ```
