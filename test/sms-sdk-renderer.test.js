@@ -22,7 +22,7 @@ const message = {
     displayName: 'mock displayName',
   },
   comment: {
-    body: 'mock subject'
+    body: 'mock comment body'
   },
   assignee: {
     emailAddress: 'mock@email.com',
