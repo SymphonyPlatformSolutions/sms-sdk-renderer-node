@@ -100,23 +100,23 @@ To get the compiled template in `MessageML` format, use the functions:
 
 The complete list of message data object properties (example can be seen in the [test / sms-sdk-renderer.test.js](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.test.js) file):
 
-| Property              | Used in templates          | Type    | Comment                                            |
-| --------------------- | -------------------------- | ------- | -------------------------------------------------- |
-| title                 | SIMPLE, ALERT, INFORMATION | string  |                                                    |
-| content               | SIMPLE, ALERT, INFORMATION | string  |                                                    |
-| user.displayName      | INFORMATION, NOTIFICATION  | string  |                                                    |
-| key                   | NOTIFICATION               | string  |                                                    |
-| keyLink               | NOTIFICATION               | string  |                                                    |
-| subject               | NOTIFICATION               | string  |                                                    |
-| action                | NOTIFICATION               | string  |                                                    |
-| user.displayName      | NOTIFICATION               | string  |                                                    |
-| comment.body          | NOTIFICATION               | string  |                                                    |
-| assignee.emailAddress | NOTIFICATION               | string  |                                                    |
-| assignee.displayName  | NOTIFICATION               | string  |                                                    |
-| statusBar             | NOTIFICATION               | boolean | To show or not the notification status bar         |
-| type.name             | NOTIFICATION               | string  |                                                    |
-| priority.name         | NOTIFICATION               | string  |                                                    |
-| epic.name             | NOTIFICATION               | string  |                                                    |
-| epic.link             | NOTIFICATION               | string  |                                                    |
-| status.name           | NOTIFICATION               | string  |                                                    |
-| labels                | NOTIFICATION               | string  | array of objects with property `text`, type string |
+| Property              | Used in templates                        | Type    |
+| --------------------- | ---------------------------------------- | ------- |
+| title                 | SIMPLE, ALERT, INFORMATION, NOTIFICATION | string  |
+| content               | SIMPLE, ALERT, INFORMATION               | string  |
+| user.displayName      | INFORMATION, NOTIFICATION                | string  |
+| key                   | NOTIFICATION                             | string  |
+| keyLink               | NOTIFICATION                             | string  |
+| subject               | NOTIFICATION                             | string  |
+| action                | NOTIFICATION                             | string  |
+| user.displayName      | NOTIFICATION                             | string  |
+| comment.body          | NOTIFICATION                             | string  |
+| assignee.emailAddress | NOTIFICATION                             | string  |
+| assignee.displayName  | NOTIFICATION                             | string  |
+| statusBar             | NOTIFICATION                             | boolean |
+| type.name             | NOTIFICATION                             | string  |
+| priority.name         | NOTIFICATION                             | string  |
+| epic.name             | NOTIFICATION                             | string  |
+| epic.link             | NOTIFICATION                             | string  |
+| status.name           | NOTIFICATION                             | string  |
+| labels                | NOTIFICATION                             | string  |

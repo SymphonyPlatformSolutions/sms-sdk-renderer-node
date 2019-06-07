@@ -28,7 +28,7 @@ const message = {
     emailAddress: 'mock@email.com',
     displayName: 'mock displayName',
   },
-  statusBar: true,
+  showStatusBar: true,
   type: {
     name: 'mock type'
   },
