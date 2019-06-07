@@ -120,7 +120,3 @@ The complete list of message data object properties (example can be seen in the 
 | epic.link             | NOTIFICATION               | string  |                                                    |
 | status.name           | NOTIFICATION               | string  |                                                    |
 | labels                | NOTIFICATION               | string  | array of objects with property `text`, type string |
-
-### Knowing Issue
-
-Templates are not rendered as they have to in the client application: not all MessageML tags and styles interpreted correctly by `render` function of the `entity` service (https://developers.symphony.com/extension/docs/entity-advanced-templating).
