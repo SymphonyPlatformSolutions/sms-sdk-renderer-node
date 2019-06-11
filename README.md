@@ -100,7 +100,7 @@ To get the compiled template in `MessageML` format, use the functions:
 
 The complete list of message data object properties can be seen in the test examples:
 
-* [SIMPLE message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.simple.test.js)
-* [ALERT message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.alert.test.js)
-* [INFORMATION message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.information.test.js)
-* [NOTIFICATION message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.notification.test.js)
+* [SIMPLE message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.simple.test.js)
+* [ALERT message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.alert.test.js)
+* [INFORMATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.information.test.js)
+* [NOTIFICATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.notification.test.js)
