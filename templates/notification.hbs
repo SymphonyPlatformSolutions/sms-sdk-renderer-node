@@ -8,23 +8,10 @@
       {{/if}}
 
       <div>
-        {{#if message.key}}
-        <a class="tempo-text-color--link" href="{{message.keyLink}}">{{message.key}}</a>
-        {{/if}}
-        {{#if message.subject}}
-        <span class="tempo-text-color--normal">{{message.subject}}</span>
+        {{#if message.content}}
+        <span class="tempo-text-color--normal">{{message.content}}</span>
         {{/if}}
       </div>
-
-      {{#if message.action}}
-      <div class="labelBackground badge">
-        <span class="tempo-text-color--green">{{message.action}}</span>
-        {{#if message.user}}
-        by
-        <span>{{message.user.displayName}}</span>
-        {{/if}}
-      </div>
-      {{/if}}
 
       <div class="labelBackground badge">
         {{#if message.comment}}
@@ -54,28 +41,24 @@
         <div>
           {{#if message.type}}
           <span class="tempo-text-color--secondary">Type:</span>
-          <span class="tempo-text-color--normal">{{message.type.name}}</span>
+          <span class="tempo-text-color--normal" style="margin-right:24px">{{message.type.name}}</span>
           {{/if}}
 
           {{#if message.priority}}
-          <span class="tempo-text-color--secondary">&#160;&#160;&#160;Priority:</span>
-          <span class="tempo-text-color--normal">{{message.priority.name}}</span>
-          {{/if}}
-
-          {{#if message.epic}}
-          <span class="tempo-text-color--secondary">&#160;&#160;&#160;Epic:</span>
-          <a href="{{message.epic.link}}">{{message.epic.name}}</a>
+          <span class="tempo-text-color--secondary">Priority:</span>
+          <span class="tempo-text-color--normal" style="margin-right:24px">{{message.priority.name}}</span>
           {{/if}}
 
           {{#if message.status}}
-          <span class="tempo-text-color--secondary">&#160;&#160;&#160;Status:</span>
-          <span class="tempo-bg-color--green tempo-text-color--white tempo-token">{{message.status.name}}</span>
+          <span class="tempo-text-color--secondary">Status:</span>
+          <span class="tempo-bg-color--green tempo-text-color--white tempo-token"
+            style="margin-right:24px">{{message.status.name}}</span>
           {{/if}}
 
           {{#if message.labels}}
-          <span class="tempo-text-color--secondary">&#160;&#160;&#160;Labels:</span>
+          <span class="tempo-text-color--secondary">Labels:</span>
           {{#each message.labels}}
-          <span class="hashTag">{{this.text}}</span>
+          <span class="hashTag" style="margin-right:24px">{{this.text}}</span>
           {{/each}}
           {{/if}}
         </div>

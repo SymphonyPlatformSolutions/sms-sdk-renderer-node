@@ -98,25 +98,9 @@ To get the compiled template in `MessageML` format, use the functions:
 | SmsRenderer.renderInApp() | messageData, messageType | Extension application |
 | SmsRenderer.renderInBot() | messageData, messageType | Bot                   |
 
-The complete list of message data object properties (example can be seen in the [test / sms-sdk-renderer.test.js](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.test.js) file):
+The complete list of message data object properties can be seen in the test examples:
 
-| Property              | Used in templates                        | Type    |
-| --------------------- | ---------------------------------------- | ------- |
-| title                 | SIMPLE, ALERT, INFORMATION, NOTIFICATION | string  |
-| content               | SIMPLE, ALERT, INFORMATION               | string  |
-| user.displayName      | INFORMATION, NOTIFICATION                | string  |
-| key                   | NOTIFICATION                             | string  |
-| keyLink               | NOTIFICATION                             | string  |
-| subject               | NOTIFICATION                             | string  |
-| action                | NOTIFICATION                             | string  |
-| user.displayName      | NOTIFICATION                             | string  |
-| comment.body          | NOTIFICATION                             | string  |
-| assignee.emailAddress | NOTIFICATION                             | string  |
-| assignee.displayName  | NOTIFICATION                             | string  |
-| statusBar             | NOTIFICATION                             | boolean |
-| type.name             | NOTIFICATION                             | string  |
-| priority.name         | NOTIFICATION                             | string  |
-| epic.name             | NOTIFICATION                             | string  |
-| epic.link             | NOTIFICATION                             | string  |
-| status.name           | NOTIFICATION                             | string  |
-| labels                | NOTIFICATION                             | string  |
+* [SIMPLE message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.simple.test.js)
+* [ALERT message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.alert.test.js)
+* [INFORMATION message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.information.test.js)
+* [NOTIFICATION message example](https://github.com/vinnie777/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.notification.test.js)
