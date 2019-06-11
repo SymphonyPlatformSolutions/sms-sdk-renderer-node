@@ -11,7 +11,7 @@ const assert = chai.assert;
 const { SmsRenderer } = require('../lib/sms-sdk-renderer');
 
 const myMessageData = {
-  title: 'Alert Title',
+  title: 'Notificaiton Title',
   content: 'Notificaiton content',
   description: 'Notification description',
   comment: {
