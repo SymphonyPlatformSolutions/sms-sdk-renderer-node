@@ -13,7 +13,7 @@ const { SmsRenderer } = require('../lib/sms-sdk-renderer');
 var myMessageData = [
   { "Manufacturer": "Apple", "Phone": "iPhone", "Operating System": "iOS" },
   { "Manufacturer": "Samsung", "Phone": "Galaxy", "Operating System": "Android" },
-  { "Manufacturer": "Nokia", "Phone": "Lumia", "Operating System": "Windows" }
+  { "Manufacturer": "Google", "Phone": "Google Pixel 3", "Operating System": "Android" }
 ];
 
 describe('sms-sdk-renderer table template tests', () => {
