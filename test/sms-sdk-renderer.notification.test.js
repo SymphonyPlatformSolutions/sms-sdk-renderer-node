@@ -32,12 +32,8 @@ const myMessageData = {
     name: 'message status'
   },
   labels: [
-    {
-      text: 'label1'
-    },
-    {
-      text: 'label2'
-    }
+    { text: 'label1' },
+    { text: 'label2' }
   ]
 };
 
