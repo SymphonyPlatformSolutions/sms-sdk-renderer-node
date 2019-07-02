@@ -1,4 +1,4 @@
-# sms-sdk-renderer
+# sms-sdk-renderer-node
 
 SDK renders symphony messages using precompiled Handlebars templates both in bots and in applications.
 
@@ -10,7 +10,7 @@ Now, there are several message templates that you can choose:
 | ------------ | --------------------------------------------------- |
 | SIMPLE       | Renders a message in simple format                  |
 | ALERT        | Renders a message formatted as an alert             |
-| INFORMATION  | Renders a general informaiton messages              |
+| INFORMATION  | Renders a general information messages              |
 | NOTIFICATION | Renders a message formatted as a notification       |
 | TABLE        | Renders a collection of objects in the table format |
 | LIST         | Renders a list of values                            |
@@ -24,7 +24,7 @@ Please make sure the following tools are installed:
 ### Install SDK
 
 * Add to your `package.json` file in the `"dependencies"` property, this line:
-`"sms-sdk-renderer": "github:SymphonyPlatformSolutions/sms-sdk-renderer"`
+`"sms-sdk-renderer-node": "github:SymphonyPlatformSolutions/sms-sdk-renderer-node"`
 * If you're developing client application, add this to your `webpack.config.js` file:
 
 ```
@@ -51,7 +51,7 @@ node: {
 
 * Import the sdk:
 ```
-const { SmsRenderer } = require('sms-sdk-renderer');
+const { SmsRenderer } = require('sms-sdk-renderer-node');
 ```
 * Create a message object like that, for the ALERT template:
 ```
@@ -102,9 +102,9 @@ To get the compiled template in `MessageML` format, use the functions:
 
 The complete list of message data object properties can be seen in the test examples:
 
-* [SIMPLE message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.simple.test.js)
-* [ALERT message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.alert.test.js)
-* [INFORMATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.information.test.js)
-* [NOTIFICATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.notification.test.js)
-* [TABLE message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.table.test.js)
-* [LIST message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer/blob/master/test/sms-sdk-renderer.list.test.js)
+* [SIMPLE message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.simple.test.js)
+* [ALERT message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.alert.test.js)
+* [INFORMATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.information.test.js)
+* [NOTIFICATION message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.notification.test.js)
+* [TABLE message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.table.test.js)
+* [LIST message example](https://github.com/SymphonyPlatformSolutions/sms-sdk-renderer-node/blob/master/test/sms-sdk-renderer.list.test.js)
