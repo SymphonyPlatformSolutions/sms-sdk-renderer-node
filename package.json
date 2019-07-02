@@ -1,21 +1,21 @@
 {
-  "name": "sms-sdk-renderer",
+  "name": "sms-sdk-renderer-node",
   "version": "1.0.7",
-  "description": "Symphony SMS SDK Renderer",
+  "description": "Symphony SMS SDK Renderer Node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinnie777/sms-sdk-renderer.git"
+    "url": "git+https://github.com/vinnie777/sms-sdk-renderer-node.git"
   },
   "author": "Mikhail Tarasov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vinnie777/sms-sdk-renderer/issues"
+    "url": "https://github.com/vinnie777/sms-sdk-renderer-node/issues"
   },
-  "homepage": "https://github.com/vinnie777/sms-sdk-renderer#readme",
+  "homepage": "https://github.com/vinnie777/sms-sdk-renderer-node#readme",
   "dependencies": {
     "handlebars": "^4.1.2",
     "browserify-fs": "^1.0.0"
