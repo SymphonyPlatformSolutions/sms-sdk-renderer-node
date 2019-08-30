@@ -102,8 +102,6 @@ To get the compiled template in `MessageML` format, use the functions:
 
 The complete list of message data object properties can be seen in the unit test examples.
 
-### Message Context Examples
-
 SIMPLE
 ```
 {
@@ -134,9 +132,9 @@ NOTIFICATION
   // OPTIONAL - used to render alert syle notification
   alert: true,
 
-  // Content can be a smiple text or an object
-  // Object is rendered in </card>
+  // Content can be a smiple text
   content: 'My content',
+  // or an object that is rendered in </card>
   content: {
     header: 'Content header',
     body: 'Content body'
@@ -183,6 +181,7 @@ LIST
     {
         header: "iPhone",
         body: " is an Apple device"
+    }
   ]
 };
 ```
