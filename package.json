@@ -1,6 +1,6 @@
 {
   "name": "sms-sdk-renderer-node",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Symphony SMS SDK Renderer Node",
   "main": "index.js",
   "scripts": {
