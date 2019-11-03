@@ -4,17 +4,17 @@
     <header>
       {{#> overrideHeader}}
         {{#if message.title}}
-        <h2>{{message.title}}</h2>
+        <h2>{{{message.title}}}</h2>
         <hr />
         {{/if}}
 
         {{#if message.content}}
-        <b class="tempo-text-color--green">{{message.content}}</b>
+        <b class="tempo-text-color--green">{{{message.content}}}</b>
         {{/if}}
 
         {{#if message.description}}
 
-        <i>{{message.description}}</i>
+        <i>{{{message.description}}}</i>
         <br />
         {{/if}}
       {{/overrideHeader}}
