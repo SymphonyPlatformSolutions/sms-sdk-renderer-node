@@ -1,0 +1,7 @@
+{{#> rfq-card asset=message.asset}}
+  {{#*inline "body"}}
+    {{#each message.badges}}
+        {{> badge message=this}}
+    {{/each}}
+  {{/inline}}
+{{/rfq-card}}
