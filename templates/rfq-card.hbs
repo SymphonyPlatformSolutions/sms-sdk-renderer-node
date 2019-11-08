@@ -1,0 +1,29 @@
+<div style="display:flex">
+    <div style="display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        background-color: purple;
+        border-radius: 4px 0px 0px 4px;
+        padding: 5px 10px;
+        border: 1px solid #E0E0E0;"
+    >
+        <p style="font-size:12px;margin: 0;">RFQ</p>
+        <p style="font-size: 16px;margin: 0;"><b>{{message.asset}}</b></p>
+    </div>
+    <div style="display: flex;
+        flex-wrap: wrap;
+        width:-webkit-fill-available;
+        border: 1px solid #E0E0E0;
+        align-items: center;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 5px;
+        border-left: none;"
+    >
+        {{#each message.badges}}
+            {{> badge message=this}}
+        {{/each}}
+    </div>
+</div>

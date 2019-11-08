@@ -1,18 +1,22 @@
-<table>
-  <thead>
-    <tr>
-      {{#each message.[0]}}
-      <th>{{@key}}</th>
-      {{/each}}
-    </tr>
-  </thead>
-  <tbody>
-    {{#each message}}
-    <tr>
-      {{#each this}}
-      <td>{{{this}}}</td>
-      {{/each}}
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
+{{#> information}}
+  {{#*inline "overrideHeader"}}
+    <table style="margin: 0">
+      <thead>
+        <tr>
+            {{#each message.headers}}
+              <th><b><span style="font-size: 16px; padding: 0">{{{this}}}</span></b></th>
+            {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#each message.rows}}
+          <tr>
+            {{#each this}}
+              <td style="padding: 2px 0 0 0; font-size: 14px;">{{{this}}}</td>
+            {{/each}}
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/inline}}
+{{/information}}

@@ -1,0 +1,25 @@
+<span style="display: flex;
+    flex-direction: row;
+    border: 1px solid #C3D5F0;
+    border-radius: 2px;
+    background-color: #E0EBFC;
+    color: #19376B;
+    padding: 1px 8px;
+    margin: 5px;
+    max-height: 24px;"
+>
+    {{#if message.quote}}
+        <p style="margin: 0;
+          font-family: Lato;"
+        >
+            {{message.quote}}
+        </p>
+    {{/if}}
+    {{#if message.asset}}
+        <p style="margin: 0 0 0 5px;
+            font-family: Lato;"
+        >
+            <b>{{message.asset}}</b>
+        </p>
+    {{/if}}
+</span>
