@@ -8,18 +8,14 @@
     margin: 5px;
     max-height: 24px;"
 >
-    {{#if message.quote}}
-        <p style="margin: 0;
-          font-family: Lato;"
-        >
-            {{message.quote}}
-        </p>
-    {{/if}}
-    {{#if message.asset}}
-        <p style="margin: 0 0 0 5px;
-            font-family: Lato;"
-        >
-            <b>{{message.asset}}</b>
-        </p>
-    {{/if}}
+  {{#if message.quote}}
+    <p style="margin: 0;">
+      {{message.quote}}
+    </p>
+  {{/if}}
+  {{#if message.asset}}
+    <p style="margin: 0 0 0 5px;">
+      <b>{{message.asset}}</b>
+    </p>
+  {{/if}}
 </span>

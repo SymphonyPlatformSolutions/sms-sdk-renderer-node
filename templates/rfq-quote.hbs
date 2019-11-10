@@ -1,5 +1,5 @@
-{{#> rfq-card asset=message.asset}}
-  {{#*inline "body"}}
+{{#> rfq-card message=message}}
+  {{#*inline "overrideBody"}}
     {{#each message.badges}}
         {{> badge message=this}}
     {{/each}}
