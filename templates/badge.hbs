@@ -8,14 +8,14 @@
     margin: 5px;
     max-height: 24px;"
 >
-  {{#if message.quote}}
-    <p style="margin: 0;">
-      {{message.quote}}
+  {{#if prefix}}
+    <p style="margin: 0 5px 0 0; font-size: 12px; line-height: 18px">
+      {{prefix}}
     </p>
   {{/if}}
-  {{#if message.asset}}
-    <p style="margin: 0 0 0 5px;">
-      <b>{{message.asset}}</b>
+  {{#if suffix}}
+    <p style="margin: 0;">
+      <b>{{suffix}}</b>
     </p>
   {{/if}}
 </span>

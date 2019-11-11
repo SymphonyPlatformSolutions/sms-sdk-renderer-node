@@ -17,21 +17,21 @@ const myMessageData = {
 
 describe('sms-sdk-renderer alert template tests', () => {
   it('should get compiled html from the templates - not wrapped by <messageML/>', function () {
-    const compiledSimple = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.ALERT);
+    const compiledSimple = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.ALERT);
     compiledSimple.should.be.a('string');
 
     assert.isNotTrue(compiledSimple.includes('<messageML>'));
   });
 
   it('should get compiled html from the templates - wrapped by <messageML/>', function () {
-    const compiledSimple = SmsRenderer.renderInApp(myMessageData, SmsRenderer.smsTypes.ALERT);
+    const compiledSimple = SmsRenderer.renderAppMessage(myMessageData, SmsRenderer.smsTypes.ALERT);
     compiledSimple.should.be.a('string');
 
     assert.isTrue(compiledSimple.includes('<messageML>'));
   });
 
   it('should get compiled html from the templates - test messages content', function () {
-    const compiledMessage = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.ALERT);
+    const compiledMessage = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.ALERT);
     assert.isTrue(compiledMessage.includes(myMessageData.content));
   });
 });

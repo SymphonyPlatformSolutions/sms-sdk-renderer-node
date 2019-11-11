@@ -65,7 +65,7 @@ const myMessageData = {
 
 * In the code, compile your message using the command:
 ```
-const compiledMessage = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.ALERT);
+const compiledMessage = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.ALERT);
 ```
 * Send the message with Symphony API SDK:
 ```
@@ -76,7 +76,7 @@ Symphony.sendMessage(message.stream.streamId, compiledMessage, null, Symphony.ME
 
 * In the code, in the `render` function of the `entity` service, compile your message using the command:
 ```
-const compiledMessage = SmsRenderer.renderInApp(myMessageData, SmsRenderer.smsTypes.ALERT);
+const compiledMessage = SmsRenderer.renderAppMessage(myMessageData, SmsRenderer.smsTypes.ALERT);
 ```
 * In the same `render`method, return the message like that:
 ```
@@ -97,8 +97,8 @@ To get the compiled template in `MessageML` format, use the functions:
 
 | Syntax                    | Parameters               | Where to use          |
 | ------------------------- | ------------------------ | --------------------- |
-| SmsRenderer.renderInApp() | messageData, messageType | Extension application |
-| SmsRenderer.renderInBot() | messageData, messageType | Bot                   |
+| SmsRenderer.renderAppMessage() | messageData, messageType | Extension application |
+| SmsRenderer.renderBotMessage() | messageData, messageType | Bot                   |
 
 The complete list of message data object properties can be seen in the unit test examples.
 

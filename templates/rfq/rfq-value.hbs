@@ -1,0 +1,25 @@
+<div style="display: flex;
+    flex-direction: row;
+    width:-webkit-fill-available;
+    max-width: 500px;
+    min-height: 40px;
+">
+    <div style="display: flex;
+        width: 50%;
+        {{#if agreed}}
+            background-color: #979797;
+        {{else}}
+            background-color: #C7DEF9;
+        {{/if}}
+        justify-content: center;
+        align-items: center;">
+        {{receives}}
+    </div>
+    <div style="display: flex;
+        width: 50%;
+        background-color: #EDB0FA;
+        justify-content: center;
+        align-items: center;">
+        {{pays}}
+    </div>
+</div>

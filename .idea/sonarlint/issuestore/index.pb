@@ -11,5 +11,9 @@ G
 lib/sms-sdk-renderer.js,b/e/be492058a9e10e8dde98b979a1c0ecb093a25e5c
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-H
-templates/quote-card.hbs,a/6/a6e6dd3027b47af66c53df77ebda287ebdc6162d
+C
+templates/badge.hbs,8/4/841c15d292ab4a08be90672a2c5b099c58d6ffb8
+D
+templates/simple.hbs,e/d/ed77cc0a9cbf9d442401cc564e6569bd9acc3a22
+I
+templates/information.hbs,0/9/09f88fdffe02797652272a9ec8f080d5012cd14b

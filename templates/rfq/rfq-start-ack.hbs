@@ -1,0 +1,27 @@
+{{#if message.product}}
+  {{> badge suffix=message.product }}
+{{/if}}
+
+{{#if message.index}}
+  {{> badge prefix=message.index suffix=message.currency }}
+{{/if}}
+
+{{#if message.clearingHouse}}
+  {{> badge suffix=message.clearingHouse }}
+{{/if}}
+
+{{#if message.start}}
+  {{> badge prefix="start" suffix=message.start.date }}
+{{/if}}
+
+{{#if message.tenor}}
+  {{> badge prefix="tenor" suffix=message.tenor.date }}
+{{/if}}
+
+{{#if message.sizeType}}
+  {{> badge prefix=message.sizeType suffix=message.size.size }}
+{{/if}}
+
+{{#if message.tenor}}
+  {{> badge prefix="client" suffix=message.payDirection }}
+{{/if}}
