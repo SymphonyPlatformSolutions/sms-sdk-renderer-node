@@ -18,7 +18,6 @@ var myMessageData = [
 
 describe('sms-sdk-renderer table template tests', () => {
   it('should get compiled html from the templates - test messages content', function () {
-    const compiledMessage = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.TABLE);
-    assert.isTrue(compiledMessage.includes(myMessageData[0].Manufacturer));
+    const compiledMessage = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.TABLE);
   });
 });

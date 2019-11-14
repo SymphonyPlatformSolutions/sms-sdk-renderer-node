@@ -19,7 +19,7 @@ const myMessageData = {
 
 describe('sms-sdk-renderer list template tests', () => {
   it('should get compiled html from the templates - test messages content', function () {
-    const compiledMessage = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.LIST);
+    const compiledMessage = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.LIST);
     assert.isTrue(compiledMessage.includes(myMessageData.title));
   });
 });

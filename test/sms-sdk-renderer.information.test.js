@@ -18,7 +18,7 @@ const myMessageData = {
 
 describe('sms-sdk-renderer information template tests', () => {
   it('should get compiled html from the templates - test messages content', function () {
-    const compiledMessage = SmsRenderer.renderInBot(myMessageData, SmsRenderer.smsTypes.INFORMATION);
+    const compiledMessage = SmsRenderer.renderBotMessage(myMessageData, SmsRenderer.smsTypes.INFORMATION);
     assert.isTrue(compiledMessage.includes(myMessageData.content));
   });
 });

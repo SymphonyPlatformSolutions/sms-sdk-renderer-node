@@ -1,0 +1,16 @@
+<div style="display: flex; flex-direction: column">
+    <div style="display: flex; flex-direction: row;flex-wrap:wrap;">
+        {{> rfq-start-ack message=message.product}}
+    </div>
+    <br/>
+    <div style="display: flex">
+        <p style="margin: 0 0 0 5px">Agreed by {{message.state.userName}}</p>
+        <div style="background-color: #7575753b;
+            border: 1px solid #EEEEEE;
+            margin-left: 10px;
+            padding: 0px 5px;
+            border-radius: 2px">
+            <p style="margin: 0;">{{message.rfqId}}</p>
+        </div>
+    </div>
+</div>

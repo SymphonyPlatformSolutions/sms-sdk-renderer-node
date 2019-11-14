@@ -1,0 +1,41 @@
+<div style="display: flex;flex-direction: column">
+    <p style="color:#979797;">{{message.dealerName}} pay / {{message.initiatorCompanyName}} rec {{message.dealerName}} rec/{{message.initiatorCompanyName}}</p>
+
+   {{> rfq-value receives=message.state.receive.price pays=message.state.pay.price}}
+
+    <br/>
+
+    <b>Respond by typing: </b>
+
+    <div style="display: flex;
+        flex-direction: row;
+        width:-webkit-fill-available;
+        max-width: 500px;
+    ">
+        <div style="display: flex;
+            width: 50%;
+            align-items: center;">
+            <span style=" border: 1px solid #EEEEEE;
+            background-color: #FAFAFA;
+            padding: 5px;
+            color: #E01E5A;
+            border-radius: 4px;">
+                {{message.shortCode}} rec {{message.state.receive.price}}
+            </span>
+            <p style="margin: 0 0 0 5px;">Agree to Rec {{message.state.receive.price}}</p>
+        </div>
+        <div style="display: flex;
+            width: 50%;
+            border-radius: 4px;
+            align-items: center;">
+              <span style=" border: 1px solid #EEEEEE;
+                background-color: #FAFAFA;
+                color: #E01E5A;
+                padding: 5px;
+                border-radius: 4px;">
+                {{message.shortCode}} pay {{message.state.pay.price}}
+            </span>
+            <p style="margin: 0 0 0 5px">Agree to Pay {{message.state.pay.price}}</p>
+        </div>
+    </div>
+</div>
