@@ -8,7 +8,7 @@ const chai = require('chai');
 const should = chai.should();
 const assert = chai.assert;
 
-const { SmsRenderer } = require('../lib/sms-sdk-renderer');
+const { SmsRenderer } = require('../src/lib/sms-sdk-renderer');
 
 const myMessageData = {
   title: 'Simple Title',
